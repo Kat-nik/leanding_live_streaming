@@ -2,7 +2,7 @@
 @use "mixins" as m;
 
 .experience {
-  padding: 180px 0;
+  padding: 180px 0 0;
   margin: 0 auto;
   text-align: center;
   @include m.d-flex(start, center, nowrap, column, 0, 90px);
@@ -22,6 +22,6 @@
   }
 
   @media (max-width: v.$media_min) {
-    padding: 140px 0;
+    padding: 140px 0 0;
   }
 }

@@ -11,7 +11,7 @@
   <title>Live Streaming</title>
 </head>
 <body>
-<!-- <header class="header" aria-label="header">
+<header class="header" aria-label="header">
   <div class="container">
     <nav class="header__nav nav" aria-label="header navigation">
       <div class="nav__title">
@@ -20,10 +20,10 @@
 
       <div class="nav__links">
         <ul class="nav__links-list list" aria-label="header nav links">
-          <li class="list__item" aria-label="first link">
+          <li class="list__item">
             <a href="#" class="list__item-link">about us</a>
           </li>
-          <li class="list__item" aria-label="second link">
+          <li class="list__item">
             <a href="#" class="list__item-link">contact</a>
           </li>
         </ul>
@@ -42,7 +42,7 @@
       </div>
     </nav>
   </div>
-</header> -->
+</header>
 
 <main aria-label="main content">
   <section class="hero-section" aria-label="hero section">
@@ -160,7 +160,7 @@
         <h2 class="experience__title">Our experience </h2>
 
         <div class="experience__cards">
-          <figure class="img-card">
+          <article class="img-card" aria-label="card shooting">
             <h3 class="img-card__title">Serverless Live Streaming</h3>
             <img src="assets/card_shooting.webp" alt="card_shooting img" class="img-card__preview">
             <button class="img-card__btn">
@@ -168,9 +168,9 @@
                 <use href="assets/sprites.svg#arrow-icon"></use>
               </svg>
             </button>
-          </figure>
+          <article/>
 
-          <figure class="img-card">
+          <article class="img-card" aria-label="card working">
             <h3 class="img-card__title">
               <span>Learn about CloudFlex</span>
               <span>team cases</span>
@@ -181,9 +181,9 @@
                 <use href="assets/sprites.svg#arrow-icon"></use>
               </svg>
             </button>
-          </figure>
+          </article>
 
-          <figure class="img-card">
+          <article class="img-card" aria-label="card streaming">
             <h3 class="img-card__title">
               Live streaming from mobile
             </h3>
@@ -193,7 +193,42 @@
                 <use href="assets/sprites.svg#arrow-icon"></use>
               </svg>
             </button>
-          </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section" aria-label="testimonials section">
+    <div class="container">
+      <div class="testimonials">
+        <h2 class="testimonials__title">Testimonials</h2>
+        <div class="testimonials__slider slider">
+          <article class="wave-card" aria-label="wave card">
+            <img src="assets/avatar.png" alt="photo face person" class="wave-card__avatar">
+            <p class="wave-card__quote">Очень хороший отзыв, который оставил довольный клиент. А тут я ещё не придумал что написать, поэтому просто добавил это предложение.</p>
+          </article>
+
+          <button class="slider__left-btn">
+            <svg class="slider__left-btn-icon" aria-label="arrow icon">
+              <use href="assets/sprites.svg#arrow-icon"></use>
+            </svg>
+          </button>
+
+          <button class="slider__right-btn">
+            <svg class="slider__right-btn-icon" aria-label="arrow icon">
+              <use href="assets/sprites.svg#arrow-icon"></use>
+            </svg>
+          </button>
+
+          <div class="slider__points">
+            <div class="slider__points-item"></div>
+            <div class="slider__points-item"></div>
+            <div class="slider__points-item"></div>
+            <div class="slider__points-item"></div>
+            <div class="slider__points-item"></div>
+            <div class="slider__points-item"></div>
+          </div>
         </div>
       </div>
     </div>
