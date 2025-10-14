@@ -146,6 +146,9 @@
   }
 
   .mobile-navigation {
+    .menu__list {
+      display: none;
+    }
 
     @media (max-width: v.$media_md) {
       .menu__list {
