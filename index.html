@@ -7,10 +7,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.png" type="image/png">
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="dist/index.css">
   <title>Live Streaming</title>
 </head>
-<body>
+<body style>
 <header class="header" aria-label="header">
   <div class="container">
     <nav class="header__nav nav" aria-label="header navigation">
@@ -21,10 +22,10 @@
       <div class="nav__links">
         <ul class="nav__links-list list" aria-label="header nav links">
           <li class="list__item">
-            <a href="#" class="list__item-link">about us</a>
+            <a href="#about" class="list__item-link">about us</a>
           </li>
           <li class="list__item">
-            <a href="#" class="list__item-link">contact</a>
+            <a href="#contacts" class="list__item-link">contact</a>
           </li>
         </ul>
       </div>
@@ -40,7 +41,39 @@
           </svg>
         </a>
       </div>
+
+      <div class="nav__hamburger">
+        <div class="nav__hamburger-bar bar1"></div>
+        <div class="nav__hamburger-bar bar2"></div>
+        <div class="nav__hamburger-bar bar3"></div>
+      </div>
     </nav>
+
+    <div class="mobile-navigation">
+      <nav class="mobile-navigation__menu menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="#work" class="menu__list-item-link">How we work</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#about" class="menu__list-item-link">About us</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#experience" class="menu__list-item-link">Our experience</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#testimonials" class="menu__list-item-link">Testimonials</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#form" class="menu__list-item-link">Form</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#contacts" class="menu__list-item-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
   </div>
 </header>
 
@@ -69,7 +102,7 @@
     </div>
   </section>
 
-  <section class="work-section" aria-label="work section">
+  <section class="work-section" aria-label="work section" id="work">
     <div class="container">
       <div class="work">
         <h2 class="work__title">How we work</h2>
@@ -128,7 +161,7 @@
 
   <hr class="divider">
 
-  <section class="about-section" aria-label="about section">
+  <section class="about-section" aria-label="about section" id="about">
     <div class="container">
       <div class="about">
         <div class="about__quality">
@@ -154,7 +187,7 @@
 
   <hr class="divider">
 
-  <section class="experience-section" aria-label="experience section">
+  <section class="experience-section" aria-label="experience section" id="experience">
     <div class="container">
       <div class="experience">
         <h2 class="experience__title">Our experience </h2>
@@ -199,7 +232,7 @@
     </div>
   </section>
 
-  <section class="testimonials-section" aria-label="testimonials section">
+  <section class="testimonials-section" aria-label="testimonials section" id="testimonials">
     <div class="container">
       <div class="testimonials">
         <h2 class="testimonials__title">Testimonials</h2>
@@ -234,7 +267,7 @@
     </div>
   </section>
 
-  <section class="form-section" aria-label="form section">
+  <section class="form-section" aria-label="form section" id="form">
     <div class="container">
       <div class="form-section__wrapper">
         <form action="mailto:streamihg_company@mail.ru" class="form" aria-labelledby="form-title">
@@ -253,7 +286,7 @@
   </section>
 </main>
 
-<footer class="footer-section" aria-label="contacts section">
+<footer class="footer-section" aria-label="contacts section" id="contacts">
   <div class="container">
     <div class="footer">
       <div class="footer__terms">

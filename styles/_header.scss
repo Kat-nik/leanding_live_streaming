@@ -63,6 +63,10 @@
           padding: 0 0 0 0;
         }
       }
+
+      @media (max-width: v.$media_md) {
+        display: none;
+      }
     }
 
     .covid {
@@ -82,6 +86,10 @@
 
          @extend %hover-black;
       }
+
+      @media (max-width: v.$media_md) {
+        display: none;
+      }
     }
 
     .globe {
@@ -96,6 +104,72 @@
           @extend %hover-black-icon;
         }
       }
+
+      @media (max-width: v.$media_md) {
+        display: none;
+      }
+    }
+
+    &__hamburger {
+      display: none;
+
+      @media (max-width: v.$media_md) {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &-bar {
+          width: 27px;
+          height: 2px;
+          background-color: v.$color_white;
+          transition: all .3s ease-in;
+        }
+
+        &.open {
+          .bar1 {
+            transform: rotate(45deg) translate(3px, 1px);
+          }
+          .bar2 {
+            display: none;
+          }
+          .bar3 {
+            transform: rotate(-45deg) translate(6px, -5px);
+          }
+        }
+      }
+    }
+
+    @media (max-width: v.$media_md) {
+      padding: 0 20px;
+      justify-content: space-between;
+    }
+  }
+
+  .mobile-navigation {
+    .menu__list {
+      display: none;
+    }
+
+    @media (max-width: v.$media_md) {
+      .menu__list {
+        @include m.d-flex(center, center, nowrap, column, 0, 20px);
+        background-color: #6F95F3;
+        @include m.font(30px, 400, v.$color_white);
+        width: 100%;
+        height: 100%;
+        max-height: 100vh;
+        position: fixed;
+        z-index: 10;
+        top: -100%;
+        right: 0;
+        transition: top .5s ease;
+      }
+
+      .menu__list.active {
+        top: 50px;
+      }
+
     }
   }
 }
+
